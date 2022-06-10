@@ -1,0 +1,80 @@
+/* -------------------------------- Sofia Pro ------------------------------- */
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ UltraLight\ Az.otf') format('opentype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ ExtraLight\ Az.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Light\ Az.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Medium\ Az.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Bold\ Az.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Bold\ Az.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: local('Sofia Pro'),
+    url('/src/assets/fonts/Sofia\ Pro\ Black\ Az.otf') format('opentype');
+  font-weight: 800;
+}
+
+// font family
+$sofia: 'Sofia Pro';
+
+// font size
+$text-h1: 61px;
+$text-h2: 48px;
+$text-h3: 39px;
+$text-h4: 32px;
+$text-h5: 25px;
+$text-title: 20px;
+$text-subtitle: 18px;
+$text-body: 16px;
+$text-small: 14px;
+$text-smaller: 12px;
+$text-tiny: 10px;
+
+// font weight
+$font-black: 800;
+$font-bold: 700;
+$font-semibold: 600;
+$font-medium: 500;
+$font-regular: 400;
+$font-light: 300;

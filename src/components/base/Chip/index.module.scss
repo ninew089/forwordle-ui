@@ -1,0 +1,24 @@
+.chip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  color: $forward-red;
+  font-size: $text-title;
+  height: 21px;
+  box-sizing: border-box;
+  padding: 20px;
+  animation: display 0.5s normal;
+}
+
+@keyframes display {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

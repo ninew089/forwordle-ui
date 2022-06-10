@@ -1,0 +1,50 @@
+.content_container {
+  display: flex;
+  flex-direction: column;
+
+  * {
+      text-align: center;
+  }
+
+  .title {
+      font-size: $text-title;
+      font-weight: $font-bold;
+      line-height: 29.8px;
+      color: $white;
+      width: 80%;
+      align-self: center;
+  }
+
+  .description {            
+      font-size: $text-small;
+      line-height: 20.86px;
+      margin-top: 20px;
+      color: $grey-40;
+  }
+
+  .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 21px;
+      margin-top: 40px;
+
+      > * {
+          width: 100%;
+          font-size: $text-subtitle;
+          font-weight: $font-bold;
+          line-height: 26.82px;
+          padding: 11px 0;
+          border-radius: 8px;
+          cursor: pointer;
+          border: none;
+
+          &:first-child:not(:only-child) {
+              background-color: $grey-80;
+          }
+
+          &:last-child {
+              background-color: $forward-red;
+          }
+      }
+  }
+}

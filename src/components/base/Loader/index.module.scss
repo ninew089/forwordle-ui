@@ -1,0 +1,47 @@
+.container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: unset !important;
+  background-color: #141518cc;
+  backdrop-filter: blur(4px);
+
+  .loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 48px;
+      height: 48px;
+      border: 2px solid #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+      animation: rotation 2s ease-in-out infinite;
+    }
+
+    &::after {
+      border-color: #ff3d00;
+      animation-delay: 1s;
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

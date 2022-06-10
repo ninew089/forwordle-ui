@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+
+    > * {
+        width: 100%;
+        max-width: 605px;
+
+        @include mediumMedia {
+            max-width: 480px;
+        }
+
+        @include smallMedia {
+            max-width: 400px;
+        }
+    }
+
+    .body_container {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .tab {
+        display: flex;
+        gap: 16px;
+        line-height: 24px;
+        color: $grey-40;
+        margin-top: 16px;
+        align-items: center;
+
+        * {
+            cursor: pointer;
+        }
+
+        .selected {
+            color: $forward-red;
+            font-weight: $font-bold;
+        }
+
+        :first-child {
+            width: 38px;
+        }
+    }
+
+    .divider {
+        height: 24px;
+        width: 1.5px;
+        background-color: $grey-80;
+    }
+
+    .dropdowns_container {
+        display: flex;
+        gap: 20px;
+
+        .dropdown {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            @include smallMedia {
+                width: calc((100% - 20px) / 2);
+            }
+
+            span {
+                font-size: $text-smaller;
+                line-height: 12px;
+            }
+        }
+    }
+
+    * {
+        transition: unset;
+    }
+
+    .table {
+        display: grid;
+        grid-template-columns: 24px 1fr 120px;
+        width: fit-content;
+        row-gap: 24px;
+        width: 100%;
+
+        thead {
+            color: $grey-60;
+            padding: 0;
+            line-height: 23.84px;
+
+            &:nth-child(3) {
+                text-align: right;
+            }
+        }
+
+        td {
+            display: flex;
+            line-height: 19.2px;
+
+            &.time {
+                justify-content: flex-end;
+            }
+        }
+
+        .space {
+            width: 8px;
+        }
+    
+        .sec {
+            font-size: $text-small;
+            color: $grey-40;
+        }
+    }    
+
+    .description {
+        color: $grey-40;
+        text-align: center;
+    }
+
+    .bottom_link {
+        margin-top: 40px;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        line-height: 19.2px;
+    }
+}

@@ -1,0 +1,46 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: unset !important;
+  height: 100vh;
+  background-color: #141518cc;
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+  z-index: 9999;
+
+  &.open {
+    display: initial;
+  }
+
+  &.close {
+    display: none;
+  }
+}
+
+.modal_container {
+  background: $grey-100;
+  border: solid 1.5px $grey-80;
+  width: calc(100vw - 60px) !important;
+  max-width: calc(300px) !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  position: fixed;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  z-index: 9999;
+
+  &.open {
+    transform: scale(1);
+  }
+
+  &.close {
+    transform: scale(0);
+  }
+}
