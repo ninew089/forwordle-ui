@@ -26,7 +26,8 @@ export const discordGetAccessTokenApi = (params: URLSearchParams) => {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Access-Control-Allow-Origin': '*',
       Accept: 'application/json',
-      'Access-Control-Allow-Headers': '*',
+      'Access-Control-Allow-Headers':
+        'Content-Type, Accept, X-Requested-With, remember-me, Authorization, type ',
     },
   });
 };
