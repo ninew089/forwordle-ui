@@ -25,10 +25,6 @@ export const discordGetAccessTokenApi = (params: URLSearchParams) => {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Access-Control-Allow-Origin': '*',
-      Accept: 'application/json',
-      'access-control-allow-credentials': 'true',
-      'access-control-allow-headers: ':
-        'Content-Type, Authorization, X-Audit-Log-Reason, X-Track, X-Super-Properties, X-Context-Properties, X-Failed-Requests, X-Fingerprint, X-RPC-Proxy, X-Discord-Locale, X-Debug-Options, x-client-trace-id, If-None-Match, Range, X-RateLimit-Precision',
     },
   });
 };
