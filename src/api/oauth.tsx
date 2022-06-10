@@ -26,6 +26,7 @@ export const discordGetAccessTokenApi = (params: URLSearchParams) => {
       'Content-Type': 'application/x-www-form-urlencoded',
       'Access-Control-Allow-Origin': 'https://forwordle-ui-two.vercel.app/',
       Accept: 'application/json',
+      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept";
     },
   });
 };
