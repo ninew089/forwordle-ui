@@ -24,9 +24,9 @@ export const discordGetAccessTokenApi = (params: URLSearchParams) => {
   return axios.post(URL, params, {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
-      'Access-Control-Allow-Origin': 'https://forwordle-ui-two.vercel.app/',
+      'access-control-allow-origin': '*',
       Accept: 'application/json',
-      'Access-Control-Allow-Headers':
+      'access-control-allow-headers':
         'Origin, X-Requested-With, Content-Type, Accept',
     },
   });
