@@ -60,20 +60,20 @@ export const googleAuth = async (url: URL) => {
   };
   setDataInLocal(data);
 };
-fetch("https://discord.com/api/v10/oauth2/token", {
-  "headers": {
-    "accept": "*/*",
-    "accept-language": "en-US,en;q=0.9",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "cross-site"
+fetch('https://discord.com/api/v10/oauth2/token', {
+  headers: {
+    accept: '*/*',
+    'accept-language': 'en-US,en;q=0.9',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'cross-site',
   },
-  "referrer": "https://forwordle-ui.vercel.app/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": null,
-  "method": "OPTIONS",
-  "mode": "cors",
-  "credentials": "omit"
+  referrer: 'https://forwordle-ui.vercel.app/',
+  referrerPolicy: 'strict-origin-when-cross-origin',
+  body: null,
+  method: 'OPTIONS',
+  mode: 'cors',
+  credentials: 'omit',
 });
 export const discordAuth = async (url: URL, redirect_url: string) => {
   const CODE = url.searchParams.get('code') || '';
@@ -87,8 +87,6 @@ export const discordAuth = async (url: URL, redirect_url: string) => {
   params.append('grant_type', 'authorization_code');
   params.append('code', CODE);
   params.append('redirect_uri', REDIRECT_URL);
-
-  
 
   return discordGetAccessTokenApi(params).then((response) => {
     console.log('get access token', response);
